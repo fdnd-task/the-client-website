@@ -4,7 +4,11 @@ var map = L.map("map", {
   zoomControl: false,
 });
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 20,
-  attribution: "© OpenStreetMap",
-}).addTo(map);
+L.tileLayer(
+  "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+  {
+    maxZoom: 20,
+    minZoom: 8,
+    attribution: "© Stadia Maps",
+  }
+).addTo(map);
