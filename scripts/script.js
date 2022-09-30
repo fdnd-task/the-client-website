@@ -138,7 +138,7 @@ L.tileLayer(
 
 var LeafIcon = L.Icon.extend({
   options: {
-    iconUrl: "../assets/marker.png",
+    iconUrl: "./assets/marker.png",
     shadowUrl: "",
     iconSize: [32.31, 39.65],
     shadowSize: [],
