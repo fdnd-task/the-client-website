@@ -148,6 +148,8 @@ const LeafIcon = L.Icon.extend({
   },
 });
 
+const list = document.querySelector(".js-list");
+
 for (let item of smartZones) {
   let lat = item.lat;
   let long = item.long;
@@ -155,4 +157,17 @@ for (let item of smartZones) {
   L.marker([lat, long], {
     icon: new LeafIcon(),
   }).addTo(map);
+
+  let newItem = document.createElement("li");
+  let content = document.createTextNode(item.location + ", " + item.town);
+
+  newItem.appendChild(content);
+
+  let availability = document.createElement("span");
+  let availabilityContent = document.createTextNode("Beschikbaar");
+
+  availability.appendChild(availabilityContent);
+  newItem.appendChild(availability);
+
+  list.appendChild(newItem);
 }
