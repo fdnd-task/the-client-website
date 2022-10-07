@@ -159,6 +159,8 @@ for (let item of smartZones) {
   }).addTo(map);
 
   let newItem = document.createElement("li");
+  newItem.dataset.long = lat;
+  newItem.dataset.lat = long;
   let content = document.createTextNode(item.location + ", " + item.town);
 
   newItem.appendChild(content);
@@ -171,3 +173,16 @@ for (let item of smartZones) {
 
   list.appendChild(newItem);
 }
+
+setTimeout(() => {
+  document.querySelectorAll("li").forEach((element) => {
+    element.addEventListener("click", function () {
+      let lat = element.dataset.lat;
+      let long = element.dataset.long;
+
+      map.flyTo([long, lat], 17, {
+        duration: 2,
+      });
+    });
+  });
+}, 500);
