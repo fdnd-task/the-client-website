@@ -121,7 +121,7 @@ const smartZones = [
   },
 ];
 
-var map = L.map("map", {
+const map = L.map("map", {
   center: [52.3376, 4.902],
   zoom: 11,
   zoomControl: false,
@@ -136,7 +136,7 @@ L.tileLayer(
   }
 ).addTo(map);
 
-var LeafIcon = L.Icon.extend({
+const LeafIcon = L.Icon.extend({
   options: {
     iconUrl: "./assets/marker.png",
     shadowUrl: "",
