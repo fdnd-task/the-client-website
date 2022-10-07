@@ -174,15 +174,13 @@ for (let item of smartZones) {
   list.appendChild(newItem);
 }
 
-setTimeout(() => {
-  document.querySelectorAll("li").forEach((element) => {
-    element.addEventListener("click", function () {
-      let lat = element.dataset.lat;
-      let long = element.dataset.long;
+document.querySelectorAll("li").forEach((element) => {
+  element.addEventListener("click", function () {
+    let lat = element.dataset.lat;
+    let long = element.dataset.long;
 
-      map.flyTo([long, lat], 17, {
-        duration: 2,
-      });
+    map.flyTo([long, lat], 17, {
+      duration: 2,
     });
   });
-}, 500);
+});
