@@ -150,6 +150,8 @@ const LeafIcon = L.Icon.extend({
 
 const list = document.querySelector(".js-list");
 
+list.innerHTML = "";
+
 for (let item of smartZones) {
   let lat = item.lat;
   let long = item.long;
