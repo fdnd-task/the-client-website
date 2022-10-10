@@ -75,15 +75,19 @@ nav {
   padding: 1rem 0;
 }
 
-.nav--list > li {
+.nav--list button {
   padding: 0.6rem 1rem;
   font-size: 14px;
   background-color: var(--color-gray);
   margin: 0 0.5rem;
   border-radius: 2rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
 }
 
-.nav--list > li > span {
+.nav--list button > span {
   display: none;
 }
 
@@ -107,7 +111,7 @@ nav {
     max-height: calc(100vh - var(--header-height));
   }
 
-  .nav--list > li {
+  .nav--list button {
     border-radius: 0;
     margin: 0;
     padding: 2rem 2.6rem;
@@ -115,7 +119,7 @@ nav {
     font-size: 17px;
   }
 
-  .nav--list > li > span {
+  .nav--list button > span {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
@@ -126,7 +130,7 @@ nav {
     position: relative;
   }
 
-  .nav--list > li > span::before {
+  .nav--list button > span::before {
     content: "";
     height: 6px;
     width: 6px;
@@ -138,11 +142,11 @@ nav {
     border-radius: 50%;
   }
 
-  .nav--list > li > .available::before {
+  .nav--list button > .available::before {
     background-color: var(--color-green);
   }
 
-  .nav--list > li:nth-of-type(even) {
+  .nav--list > li:nth-of-type(even) button {
     background: white;
   }
 
