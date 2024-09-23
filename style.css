@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap');
+
+:root {
+  --secondary-font: "Martian mono", sans-serif;
+  --primary-font: "Archivo", verdana;
+  --white: 255, 255, 255;
+  --black: 34, 34, 38;
+  --grey: 102, 102, 102;
+  --blue: 54, 75, 247;
+  background: rgba(var(--white));
+  font-family: var(--primary-font);
+}
+
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100vh;
+}
+
+body{
+  margin: 8px;
+  border: 1px solid rgba(var(--black));
+  min-height: calc(100% - 18px);
+}
+
+header,
+main {
+  margin: 8px auto;
+  display: grid;
+}
+
+h1, h2, h3, sub{
+    letter-spacing: -4%;
+}
+
+h1{
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: clamp(3rem, 3vw, 6rem);
+}
+
+sub{
+    font-family: var(--secondary-font);
+}
+@media screen and (max-width: 720px) {
+    h1{
+        line-height: 6rem;
+    }
+  main {
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    gap: 32px;
+  }
+}
