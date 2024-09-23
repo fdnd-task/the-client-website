@@ -20,12 +20,21 @@
 
 html{
   height: 100vh;
+  
 }
 
 body{
-  margin: 8px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.container{
+  margin: 8px 8px;
+  max-width: 1440px;
   border: 1px solid rgba(var(--black));
   min-height: calc(100% - 18px);
+  width: 100%;
 }
 
 header,
