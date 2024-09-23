@@ -42,25 +42,98 @@ main {
   margin: 8px auto;
   display: grid;
 }
-
-h1, h2, h3, sub{
-    letter-spacing: -4%;
+/* ! */
+h1 {
+  font-size: clamp(48px, 5vw, 96px);
+  font-weight: 600; /* semibold */
+  letter-spacing: -4%;
+  line-height: 100%; /* Adjusted for mobile */
 }
 
-h1{
+h2 {
+  font-size: clamp(40px, 4vw, 64px);
+  font-weight: 600;
+  letter-spacing: -4%;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 400; /* regular on mobile */
+  letter-spacing: -4%;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 400; /* regular */
+  letter-spacing: 0%;
+  line-height: 32px;
+}
+
+h5 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 32px;
+}
+
+p {
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 24px;
+}
+
+.subtext {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400;
+  letter-spacing: -4%;
+  line-height: 24px;
+}
+
+@media (min-width: 769px) {
+  h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
-    line-height: 100%;
-    font-size: clamp(3rem, 3vw, 6rem);
-}
+  }
+  h1 {
+    line-height: 96px; /* Adjusted line height for desktop */
+  }
 
-sub{
-    font-family: var(--secondary-font);
-}
-@media screen and (max-width: 720px) {
-    h1{
-        line-height: 6rem;
-    }
-  main {
+  h2 {
+    line-height: 64px;
+  }
+
+  h3 {
+    font-weight: 600; /* Change back to semibold on larger screens */
+    line-height: 48px;
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  header, main {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     gap: 32px;
