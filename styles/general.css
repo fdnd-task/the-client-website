@@ -1,0 +1,118 @@
+/* typography sm */
+h1 {
+  font-size: clamp(48px, 5vw, 96px);
+  font-weight: 600; /* stays semibold */
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(1em, 5vw, 96px);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(40px, 4vw, 64px);
+  font-weight: 600; /* stays semibold */
+  letter-spacing: var(--letter-spacing);
+  line-height: 40px;
+}
+
+h3 {
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 400; /* regular on sm | semiBold on md+ */
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(24px, 3.5vw, 1em);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 400; /* stays regular */
+  letter-spacing: 0;
+  line-height: clamp(32px, 3vw, 40px);
+}
+
+h5,
+h6 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600; /* stays semibold */
+  letter-spacing: 0;
+  line-height: clamp(32px, 2vw, 40px);
+}
+
+h6 {
+  font-weight: 400; /* stays regular */
+}
+
+p {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 400; /* stays regular */
+  letter-spacing: 0;
+  line-height: clamp(24px, 2.5vw, 32px);
+}
+
+.subtext {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400; /* stays regular */
+  letter-spacing: var(--letter-spacing);
+  line-height: 24px;
+  font-family: var(--secondary-font);
+}
+/* end typography */
+
+/* header | nav */
+header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  padding-top: 16px;
+  background: rgba(var(--white));
+}
+
+nav {
+  padding: 48px;
+  border: 1px solid rgba(var(--black));
+  border-bottom: 1px solid transparent;
+  display: flex;
+  width: 100%;
+  transition: 0.2s ease;
+  color: rgba(var(--black));
+}
+
+nav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav.scrolled {
+  padding: 16px 48px;
+  border-bottom: 1px solid rgba(var(--black));
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  width: 50%;
+  justify-content: end;
+  &:first-of-type {
+    justify-content: space-between;
+    padding: 16px 0 0 0;
+    margin: 0 48px;
+  }
+}
+
+nav ul li span {
+  font-weight: 300;
+}
+
+@media screen and (min-width: 769px) {
+  /* grid */
+  main {
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    gap: 16px;
+  }
+  section {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: subgrid;
+  }
+}
