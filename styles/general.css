@@ -59,14 +59,16 @@ p {
 
 /* header | nav */
 header {
+  /* zorgt ervoor dat de content / page layout niet shift */
+  height: 178px;
   position: sticky;
-  display: flex;
-  top: 0;
-  padding-top: 16px;
-  background: rgba(var(--white));
+  top: 16px;
+  /* hide de borders van de main */
+  box-shadow: 0 -16px 0 0 rgba(var(--white));
 }
 
 nav {
+  height: fit-content;
   padding: 48px;
   border: 1px solid rgba(var(--black));
   border-bottom: 1px solid transparent;
@@ -74,6 +76,7 @@ nav {
   width: 100%;
   transition: 0.2s ease;
   color: rgba(var(--black));
+  background: rgba(var(--white));
 }
 
 nav a{
@@ -84,6 +87,21 @@ nav a{
 nav.scrolled {
   padding: 16px 48px;
   border-bottom: 1px solid rgba(var(--black));
+}
+
+/* 
+stomme 'hack'
+maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
+*/
+header::after{
+  content: '';
+  position: absolute;
+  width: calc(100% - 2px);
+  height: 100%;
+  top: 50%;
+  left: 0;
+  border-left: 1px solid rgba(var(--black));
+  border-right: 1px solid rgba(var(--black));
 }
 
 nav ul {
@@ -102,13 +120,14 @@ nav ul {
 nav ul li span {
   font-weight: 300;
 }
+/* end of nav | header */
 
 @media screen and (min-width: 769px) {
   /* grid */
   main {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
-    gap: 16px;
+    gap: 0 16px;
   }
   section {
     display: grid;

@@ -40,6 +40,9 @@ main {
   border: 1px solid rgba(var(--black));
   border-top: none;
   height: 200vh;
+  align-content:baseline;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  /* height: fit-content; */
   margin: 0 auto 16px 0;
   display: grid;
 }
@@ -49,12 +52,19 @@ main {
   section {
     grid-column: 1 / -1;
   }
-  .opening > * { 
+
+  section {
+    margin: 48px 0;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .content-block > * { 
     grid-column: 3 / 11;
     text-align: center;
     gap: 16px 16px;
   }
-  .opening span {
+  .content-block span {
     color: red;
   }
 }
@@ -65,5 +75,9 @@ main {
 
 
 figure {
-  width: fit-content;
+  max-height: 80px;
+}
+
+img {
+  max-height: 100%;
 }
