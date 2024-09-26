@@ -8,6 +8,7 @@
   --black: 34, 34, 38;
   --grey: 102, 102, 102;
   --blue: 54, 75, 247;
+  --important: 247, 225, 159;
   --letter-spacing: -0.04em; /* -4% van de font size */
 
   /* spacing */
@@ -81,6 +82,11 @@ a > figure > img{
 a:hover > figure > img{
   transform: translateX(5px);
 }
+
+a:active{
+  background-color: rgba(var(--important));
+}
+
 /* typography sm */
 h1 {
   font-size: clamp(var(--size-lg), 5vw, var(--size-xxl));
@@ -332,4 +338,9 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 }
 header figure {
   max-height: 80px;
+}
+
+::selection{
+  background-color: rgba(var(--important));
+  color: rgba(var(--white));
 }
