@@ -20,6 +20,7 @@
 
 html {
   min-height: 100vh;
+  margin: 20px;
 }
 
 body {
@@ -78,10 +79,18 @@ p {
   display: flex;
 }
 
-.filterlist button {
+.filterlist p{
   background-color: white;
   padding: 10px;
   border: 1px solid black;
+}
+
+.filterlist a{
+  display: flex;
+}
+
+.filter-item {
+  margin: 0px 1em;
 }
 
 /*CARDS*/
@@ -106,6 +115,7 @@ p {
 .card {
   padding: 16px;
   text-align: left;
+  height: 850px;
 }
 
 .cardlabel {
@@ -141,6 +151,23 @@ h3 {
 h2 {
   font-size: 64px;
   letter-spacing: -0.04em;
+}
+
+/*BEKIJK VACATURES*/
+.vacatures {
+  color: blue;
+}
+
+.betweencards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+  border: 0.5px solid black;
+}
+
+.betweencards {
+  
 }
 
 /*MEER EVENTS LADEN*/
