@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap");
+
+:root {
+  --secondary-font: "Martian mono", sans-serif;
+  --primary-font: "Archivo", verdana;
+  --white: 255, 255, 255;
+  --black: 34, 34, 38;
+  --grey: 102, 102, 102;
+  --blue: 54, 75, 247;
+  --letter-spacing: -0.04em; /* -4% van de font size */
+  background: rgba(var(--white));
+  font-family: var(--primary-font);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  margin: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.subtext {
+  font-family: Martian Mono;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  font-size: 96px;
+  letter-spacing: -0.04em;
+  padding: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+/* SUBTEXT HEADER LINK */
+.ddalidlink {
+  text-decoration: underline;
+  color: black;
+}
+
+/*FILTERSYSTEEM*/
+.search {
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: "Archivo", verdana;
+  font-size: 18px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.filter ul {
+  list-style-type: none;
+}
+
+.filterlist {
+  display: flex;
+}
+
+.filterlist p{
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.filterlist a{
+  display: flex;
+}
+
+.filter-item {
+  margin: 0px 1em;
+}
+
+/*CARDS*/
+.row {
+  width: 100%;
+  border: 0.5px solid black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+  border: 0.5px solid black;
+}
+
+.card {
+  padding: 16px;
+  text-align: left;
+  height: 850px;
+}
+
+.cardlabel {
+  display: flex;
+}
+
+.cardlabel p {
+  margin: 4px;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+.cardinfo p {
+  margin: 20px 0px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+}
+
+.details {
+  text-decoration: none;
+  color: blue;
+}
+
+.cardimage {
+  width: 100%;
+}
+
+h2 {
+  font-size: 64px;
+  letter-spacing: -0.04em;
+}
+
+/*BEKIJK VACATURES*/
+.vacatures {
+  color: blue;
+}
+
+.betweencards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+  border: 0.5px solid black;
+}
+
+/*MEER EVENTS LADEN*/
+.loadevents {
+  width: 100%;
+  border: 1px solid black;
+  padding: 50px 0px;
+}
+
+.loadevents p{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+
+/*PARTNERS*/
+h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+@keyframes ticker-kf {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* 10rem for each logo x 6 logos total = -60rem */
+    transform: translateX(-60rem);
+  }
+}
+
+.img-ticker {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  animation: ticker-kf 10s linear infinite;
+}
+
+.tickerlogo {
+  width: 8rem;
+  flex: none;
+  margin: 0 1rem 0 1rem;
+  align-self: flex-start;
+  max-width: 100%;
+  height: auto;
+}
