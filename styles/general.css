@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap");
+/* ! replace this eventually */
+/* variables */
+:root {
+  --secondary-font: "Martian mono", sans-serif;
+  --primary-font: "Archivo", verdana;
+  --white: 255, 255, 255;
+  --black: 34, 34, 38;
+  --grey: 102, 102, 102;
+  --blue: 54, 75, 247;
+  --important: 247, 225, 159;
+  --letter-spacing: -0.04em; /* -4% van de font size */
+
+  /* spacing */
+  --size-xs: 0.5rem;
+  --size-sm: 1rem;
+  --size-md: 2rem;
+  --size-lg: 3rem;
+  --size-xl: 4rem;
+  --size-xxl: 6rem;
+
+   /* animation */
+   --bounce: .3s cubic-bezier(0.67, -0.7, 0.39, 1.75);
+  background: rgba(var(--white));
+  font-family: var(--primary-font);
+}
+
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a {
+  color: rgba(var(--blue));
+  text-decoration: none;
+  position: relative;
+}
+.arrow{
+  max-width: 1rem;
+  max-height: 1rem;
+}
+.link{
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
+.btn{
+  display: flex;
+  height: 48px;
+  color: rgba(var(--black));
+  border: 1px solid rgba(var(--black));
+  span{
+    border-right: 1px solid rgba(var(--black));
+    padding: 16px 14px;
+    height: 100%;
+  }
+  figure{
+    height: 100%;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-content: center;
+  }
+}
+a > figure > img{
+  transition: var(--bounce);
+
+}
+a:hover > figure > img{
+  transform: translateX(5px);
+}
+
+a:active{
+  background-color: rgba(var(--important));
+}
+
+/* typography sm */
+h1 {
+  font-size: clamp(var(--size-lg), 5vw, var(--size-xxl));
+  font-weight: 600; /* stays semibold */
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(1em, 5vw, var(--size-xxl));
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 4vw, 64px);
+  font-weight: 600; /* stays semibold */
+  letter-spacing: var(--letter-spacing);
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: clamp(var(--size-md), 3.5vw, 48px);
+  font-weight: 400; /* regular on sm | semiBold on md+ */
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(24px, 3.5vw, 1em);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: clamp(24px, 3vw, var(--size-md));
+  font-weight: 400; /* stays regular */
+  letter-spacing: 0;
+  line-height: clamp(var(--size-md), 3vw, 2.5rem);
+}
+
+h5,
+h6 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600; /* stays semibold */
+  letter-spacing: 0;
+  line-height: clamp(var(--size-md), 2vw, 2.5rem);
+}
+
+h6 {
+  font-weight: 400; /* stays regular */
+}
+
+p {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 400; /* stays regular */
+  letter-spacing: 0;
+  line-height: clamp(24px, 2.5vw, var(--size-md));
+}
+
+.subtext {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400; /* stays regular */
+  letter-spacing: var(--letter-spacing);
+  line-height: 24px;
+  font-family: var(--secondary-font);
+}
+/* end typography */
+
+/* content */
+main > * {
+  grid-column: 1 / -1;
+  margin: 48px 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+main {
+  display: grid;
+  align-content: baseline;
+  padding: 0 16px;
+  margin: 0 auto 16px 0;
+  /* just for testing purposes */
+  height: 200vh;
+}
+
+/* companies block */
+.companies-block {
+  overflow: hidden;
+  margin-left: -16px;
+  margin-right: -16px;
+  border: 1px solid rgba(var(--black));
+  border-width: 1px 0;
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    figure {
+      /* md+ screen */
+      min-width: clamp(120px, 15vw, 176px);
+      min-height: clamp(120px, 15vw, 176px);
+      img {
+        width: 100%; /* Make image take the full width of the figure */
+        height: 100%; /* Ensure the image takes the full height */
+        object-fit: cover; /* Cover the entire area, cropping if necessary */
+        display: block; /* Remove bottom whitespace */
+      }
+    }
+  }
+  div:nth-child(2) {
+    /* temp */
+    justify-content: center;
+  }
+}
+
+/* end of companies block */
+
+/* content block */
+
+.content-block > * {
+  grid-column: 3 / 11;
+  text-align: center;
+}
+.content-block {
+  gap: 16px 16px;
+}
+.content-block span:not(a>span) {
+  color: red;
+}
+.content-block div{
+  grid-column: 5 / 9;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* end of content block */
+
+.companies-block + .content-block {
+  margin-top: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 -16px 0 0 rgba(var(--white));
+}
+nav {
+  display: flex;
+  color: rgba(var(--black));
+  background: rgba(var(--white));
+  width: 100%;
+  transition: 0.2s ease;
+  a {
+    color: inherit;
+  }
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* container */
+.container {
+  max-width: 1440px;
+  min-height: calc(100% - 18px);
+  width: 100%;
+}
+
+/* md and lg screens */
+@media screen and (min-width: 769px) {
+  /* header | nav */
+  header {
+    /* zorgt ervoor dat de content / page layout niet shift */
+    height: 178px; /* md+ */
+    top: 16px;
+
+    /* hide de borders van de main */
+  }
+
+  nav {
+    padding: 0.75rem 1rem;
+    height: fit-content;
+    border: 1px solid rgba(var(--black));
+    
+  }
+
+  /* 
+stomme 'hack'
+maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
+*/
+  header::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 50%;
+    top: 50%;
+    left: 0;
+    border-left: 1px solid rgba(var(--black));
+    border-right: 1px solid rgba(var(--black));
+    z-index: -1;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 50%;
+    justify-content: end;
+    &:first-of-type {
+      justify-content: space-between;
+      padding: 16px 0 0 0;
+      margin: 0 48px;
+    }
+  }
+
+  nav ul li span {
+    font-weight: 300;
+  }
+  /* end of nav | header */
+  .companies-block {
+    margin: 0 -48px;
+  }
+  main {
+    padding: 0 48px;
+    border: 1px solid rgba(var(--black));
+    border-top: none;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    gap: 0 16px;
+  }
+
+  section {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: subgrid;
+  }
+
+  /* md+ nav | header */
+  nav {
+    padding: 48px;
+    border-bottom: 1px solid transparent;
+  }
+  nav.scrolled {
+    padding: 16px 48px;
+    border-bottom: 1px solid rgba(var(--black));
+  }
+  /* end of md+ nav | header */
+
+  .container {
+    margin: 0px 16px;
+  }
+}
+/* end of md and lg screens */
+/* hamburger menu removal */
+@media screen and (min-width: 900px) {
+}
+header figure {
+  max-height: 80px;
+}
+
+::selection{
+  background-color: rgba(var(--important));
+  color: rgba(var(--white));
+}
