@@ -46,6 +46,8 @@ a {
   color: rgba(var(--blue));
   text-decoration: none;
   position: relative;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
 }
 .arrow {
   max-width: 1rem;
@@ -54,6 +56,7 @@ a {
 .link {
   display: flex;
   align-items: center;
+  font-weight: 700;
   gap: 0.5rem;
 }
 
@@ -67,7 +70,7 @@ a {
     padding: 16px 14px;
     height: 100%;
   }
-  figure {
+  div {
     height: 100%;
     width: 48px;
     height: 48px;
@@ -75,10 +78,10 @@ a {
     place-content: center;
   }
 }
-a > figure > img {
+a > div > img {
   transition: var(--bounce);
 }
-a:hover > figure > img {
+a:hover > div > img {
   transform: translateX(5px);
 }
 
@@ -89,7 +92,7 @@ a:active {
 /* typography sm */
 h1,
 .xxxl {
-  font-size: clamp(var(--size-lg), 5vw, var(--size-xxl));
+  font-size: clamp(var(--size-lg), 6vw, var(--size-xxl));
   font-weight: 600; /* stays semibold */
   letter-spacing: var(--letter-spacing);
   line-height: clamp(1em, 5vw, var(--size-xxl));
@@ -98,7 +101,7 @@ h1,
 
 h2,
 .xxl {
-  font-size: clamp(2.5rem, 4vw, 64px);
+  font-size: clamp(2.5rem, 5vw, 64px);
   font-weight: 600; /* stays semibold */
   letter-spacing: var(--letter-spacing);
   line-height: 2.5rem;
@@ -144,12 +147,31 @@ p,
 }
 
 .subtext,
-.xs {
+.xs,
+p:has(time) {
   font-size: 16px;
   font-weight: 400; /* stays regular */
   letter-spacing: var(--letter-spacing);
   line-height: 24px;
   font-family: var(--secondary-font);
+}
+
+p:has(time) {
+  text-transform: uppercase;
+}
+
+time::after {
+  content: "/";
+  padding: 0 0.5rem;
+}
+
+.label {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  letter-spacing: -.06em;
+  border: 1px solid rgba(var(--black));
+  text-transform: uppercase;
+  padding: 0 4px;
 }
 
 .neutral {
@@ -241,12 +263,56 @@ div:nth-child(2) {
 .events-block {
   display: flex;
   flex-direction: row;
-  div {
+  border: 1px solid rgba(var(--black));
+  border-width: 1px 0;
+  margin: 0 -48px;
+  > div {
     display: flex;
     flex-direction: column;
-    img{
+    padding: 3rem;
+    border-right: 1px solid rgba(var(--black));
+    > * {
       max-width: 384px;
+    }
+    img {
       width: 416px;
+      margin-bottom: 24px;
+    }
+    article {
+      margin-bottom: 3.5rem;
+      > * + *:not(:last-child) {
+        margin: 1rem 0;
+      }
+    }
+    a {
+      width: fit-content;
+    }
+  }
+  ul {
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    h3 {
+      text-transform: none;
+    }
+    li {
+      height: fit-content;
+      margin-bottom: 32px;
+      > *:not(:last-child) {
+        margin: 1rem 0;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    li:last-child {
+      margin: 0;
+    }
+    li + li {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(var(--black));
     }
   }
 }
@@ -271,13 +337,29 @@ nav {
   }
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
 nav ul {
   display: flex;
   flex-direction: column;
+  li {
+    height: fit-content;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      span {
+        padding: 0 0.25rem;
+        font-size: 0.75rem;
+        background-color: rgba(var(--blue));
+        height: fit-content;
+        line-height: 1rem;
+        color: rgba(var(--white));
+      }
+    }
+  }
 }
 
 /* container */
@@ -324,9 +406,11 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     flex-direction: row;
     width: 50%;
     justify-content: end;
+    padding-top: 1rem;
+    gap: 3rem;
     &:first-of-type {
+      gap: initial;
       justify-content: space-between;
-      padding: 16px 0 0 0;
       margin: 0 48px;
     }
   }
@@ -344,7 +428,7 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     border-top: none;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
-    gap: 0 16px;
+    gap: 0 32px;
   }
 
   section {
@@ -366,6 +450,12 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 
   .container {
     margin: 0px 16px;
+  }
+
+  .events-block {
+    > div a {
+      margin-bottom: 4.75rem;
+    }
   }
 }
 /* end of md and lg screens */
