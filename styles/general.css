@@ -87,7 +87,8 @@ a:active {
 }
 
 /* typography sm */
-h1, .xxxl {
+h1,
+.xxxl {
   font-size: clamp(var(--size-lg), 5vw, var(--size-xxl));
   font-weight: 600; /* stays semibold */
   letter-spacing: var(--letter-spacing);
@@ -95,14 +96,16 @@ h1, .xxxl {
   text-transform: uppercase;
 }
 
-h2, .xxl {
+h2,
+.xxl {
   font-size: clamp(2.5rem, 4vw, 64px);
   font-weight: 600; /* stays semibold */
   letter-spacing: var(--letter-spacing);
   line-height: 2.5rem;
 }
 
-h3, .xl {
+h3,
+.xl {
   font-size: clamp(var(--size-md), 3.5vw, 48px);
   font-weight: 400; /* regular on sm | semiBold on md+ */
   letter-spacing: var(--letter-spacing);
@@ -110,7 +113,8 @@ h3, .xl {
   text-transform: uppercase;
 }
 
-h4, .lg {
+h4,
+.lg {
   font-size: clamp(24px, 3vw, var(--size-md));
   font-weight: 400; /* stays regular */
   letter-spacing: 0;
@@ -118,30 +122,46 @@ h4, .lg {
 }
 
 h5,
-h6, .md {
+h6,
+.md {
   font-size: clamp(18px, 2vw, 24px);
   font-weight: 600; /* stays semibold */
   letter-spacing: 0;
   line-height: clamp(var(--size-md), 2vw, 2.5rem);
 }
 
-h6, .light {
+h6,
+.light {
   font-weight: 400; /* stays regular */
 }
 
-p, .sm {
+p,
+.sm {
   font-size: clamp(16px, 2.5vw, 18px);
   font-weight: 400; /* stays regular */
   letter-spacing: 0;
   line-height: clamp(24px, 2.5vw, var(--size-md));
 }
 
-.subtext, .xs {
-  font-size: clamp(14px, 2vw, 16px);
+.subtext,
+.xs {
+  font-size: 16px;
   font-weight: 400; /* stays regular */
   letter-spacing: var(--letter-spacing);
   line-height: 24px;
   font-family: var(--secondary-font);
+}
+
+.neutral {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
 }
 /* end typography */
 
@@ -155,17 +175,17 @@ main > * {
 }
 
 main {
+  grid-auto-rows: max-content;
   display: grid;
   align-content: baseline;
   padding: 0 16px;
   margin: 0 auto 16px 0;
-  /* just for testing purposes */
-  height: 200vh;
 }
 
 /* companies block */
 .companies-block {
   overflow: hidden;
+  height: fit-content;
   margin-left: -16px;
   margin-right: -16px;
   border: 1px solid rgba(var(--black));
@@ -199,7 +219,7 @@ div:nth-child(2) {
 .content-block {
   gap: 16px 16px;
 }
-.content-block span:not(a > span) {
+.content-block :not(h1) span:not(a > span) {
   color: red;
 }
 .content-block > div:not(:has(h1)) {
@@ -217,6 +237,20 @@ div:nth-child(2) {
 
 /* end of content block */
 
+/* events block */
+.events-block {
+  display: flex;
+  flex-direction: row;
+  div {
+    display: flex;
+    flex-direction: column;
+    img{
+      max-width: 384px;
+      width: 416px;
+    }
+  }
+}
+/* end of events block */
 header {
   position: sticky;
   top: 0;
@@ -237,8 +271,11 @@ nav {
   }
 }
 
-nav ul {
+ul{
   list-style-type: none;
+}
+
+nav ul {
   display: flex;
   flex-direction: column;
 }
