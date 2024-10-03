@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "archivo";
+  src: url("../assets/Archivo-VariableFont_wdth/wght.ttf");
+}
+
+@font-face {
+  font-family: "martianmono";
+  src: url("../assets/MartianMono-VariableFont_wdth/,wght.ttf");
+}
+
+:root {
+  --zwart: #222226;
+  --grijs: #666666;
+  --wit: #FFFFFF;
+  --blauw: rgb(54, 75, 247);
+}
+
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 16px; 
+}
+
+/* header */
+a.header {
+  text-decoration: none;
+  font-family: "martianmono";
+  font-size: 16px;
+  color: var(--zwart);
+}
+
+h1 {
+  font-family: "archivo";
+  font-size: 96px;
+  font-weight: bold;
+}
+
+p.header {
+  font-family: "archivo";
+  font-size: 24px;
+}
+
+/* section p1 */
+h3 {
+  font-family: "archivo";
+  font-size: 48px;
+}
+
+h4 {
+  font-family: "archivo";
+  font-size: 32px;
+}
+
+p.data {
+  font-family: "martianmono";
+  font-size: 16px;
+}
+
+p.label {
+  font-size: 16px;
+  font-family: "martianmono";
+  font-weight: light;
+  border: 1px solid black;
+  padding: 4px;
+  width:fit-content;
+}
+
+li {
+  list-style-type: none;
+}
