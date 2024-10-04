@@ -48,7 +48,7 @@ a {
   position: relative;
   font-family: var(--secondary-font);
   text-transform: uppercase;
-  svg > path{
+  svg > path {
     stroke: rgba(var(--blue));
   }
 }
@@ -172,7 +172,7 @@ time::after {
 .label {
   font-family: var(--secondary-font);
   font-weight: 300;
-  letter-spacing: -.06em;
+  letter-spacing: -0.06em;
   border: 1px solid rgba(var(--black));
   text-transform: uppercase;
   padding: 0 4px;
@@ -245,8 +245,17 @@ div:nth-child(2) {
 .content-block {
   justify-items: center;
   gap: 16px 16px;
-  span:nth-child(1){
+  span:nth-child(1) {
     width: fit-content;
+  }
+  > a {
+    margin-top: 1rem;
+  }
+  &:has(h1) {
+    margin-bottom: 8.125rem;
+    > div {
+      margin-top: 1.5rem;
+    }
   }
 }
 .content-block :not(h1) span:not(a > span) {
@@ -274,7 +283,8 @@ div:nth-child(2) {
   flex-direction: row;
   border: 1px solid rgba(var(--black));
   border-width: 1px 0;
-  margin: 0 -48px;
+  margin-left: -48px;
+  margin-right: -48px;
   > div {
     display: flex;
     flex-direction: column;
@@ -429,7 +439,8 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
   }
   /* end of nav | header */
   .companies-block {
-    margin: 0 -48px;
+    margin-left: -48px;
+    margin-right: -48px;
   }
   main {
     padding: 0 48px;
