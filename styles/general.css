@@ -48,6 +48,9 @@ a {
   position: relative;
   font-family: var(--secondary-font);
   text-transform: uppercase;
+  svg > path{
+    stroke: rgba(var(--blue));
+  }
 }
 .arrow {
   max-width: 1rem;
@@ -65,6 +68,7 @@ a {
   height: 48px;
   color: rgba(var(--black));
   border: 1px solid rgba(var(--black));
+  stroke: initial;
   span {
     border-right: 1px solid rgba(var(--black));
     padding: 16px 14px;
@@ -239,7 +243,11 @@ div:nth-child(2) {
   text-align: center;
 }
 .content-block {
+  justify-items: center;
   gap: 16px 16px;
+  span:nth-child(1){
+    width: fit-content;
+  }
 }
 .content-block :not(h1) span:not(a > span) {
   color: red;
@@ -255,6 +263,7 @@ div:nth-child(2) {
 .content-block h1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* end of content block */
