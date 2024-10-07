@@ -11,6 +11,10 @@
   --important: 247, 225, 159;
   --letter-spacing: -0.04em; /* -4% van de font size */
 
+  /* width */
+  --minimum-size: 769px;
+  --burger-size: 1300px;
+
   /* spacing */
   --size-xs: 0.5rem;
   --size-sm: 1rem;
@@ -113,7 +117,7 @@ h2,
 
 h3,
 .xl {
-  font-size: clamp(var(--size-md), 3.5vw, 48px);
+  font-size: clamp(var(--size-md), 4vw, 48px);
   font-weight: 400; /* regular on sm | semiBold on md+ */
   letter-spacing: var(--letter-spacing);
   line-height: clamp(24px, 3.5vw, 1em);
@@ -122,7 +126,7 @@ h3,
 
 h4,
 .lg {
-  font-size: clamp(24px, 3vw, var(--size-md));
+  font-size: clamp(24px, 3.5vw, var(--size-md));
   font-weight: 400; /* stays regular */
   letter-spacing: 0;
   line-height: clamp(var(--size-md), 3vw, 2.5rem);
@@ -203,6 +207,7 @@ main > * {
 main {
   grid-auto-rows: max-content;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-content: baseline;
   padding: 0 16px;
   margin: 0 auto 16px 0;
@@ -336,6 +341,7 @@ div:nth-child(2) {
   }
 }
 /* end of events block */
+
 header {
   position: sticky;
   top: 0;
@@ -343,6 +349,7 @@ header {
   box-shadow: 0 -16px 0 0 rgba(var(--white));
 }
 header img {
+  min-height: 40px;
   max-height: 60px;
 }
 nav {
@@ -386,11 +393,24 @@ nav ul {
   max-width: 1440px;
   min-height: calc(100% - 18px);
   width: 100%;
+  @media (min-width: 769px) {
+    margin: 0 1rem;
+  }
+}
+
+nav {
+  div {
+    button {
+      height: 100%;
+      aspect-ratio: 1;
+    }
+  }
 }
 
 /* md and lg screens */
 @media screen and (min-width: 769px) {
   /* header | nav */
+
   header {
     /* zorgt ervoor dat de content / page layout niet shift */
     height: 178px; /* md+ */
@@ -403,12 +423,22 @@ nav ul {
     padding: 0.75rem 1rem;
     height: fit-content;
     border: 1px solid rgba(var(--black));
+    div {
+      width: 100%;
+      display: flex;
+      button {
+        border: 0;
+        border-radius: 0;
+        display: none;
+      }
+    }
   }
 
   /* 
 stomme 'hack'
 maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 */
+
   header::after {
     content: "";
     position: absolute;
@@ -428,9 +458,10 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     padding-top: 1rem;
     gap: 3rem;
     &:first-of-type {
-      gap: initial;
-      justify-content: space-between;
+      justify-content: start;
       margin: 0 48px;
+      gap: 2rem;
+      width: 100%;
     }
   }
 
@@ -442,6 +473,54 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     margin-left: -48px;
     margin-right: -48px;
   }
+
+  /* vacancy block */
+  /* ? ombouwen naar grid ? */
+  .vacancy-block {
+    margin-left: -48px;
+    margin-right: -48px;
+    border: 1px solid rgba(var(--black));
+    border-width: 1px 0;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: subgrid;
+    flex-direction: column;
+    li {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: 1 / -1;
+      padding: 2.5rem 0 2rem 0;
+      align-items: center;
+      /* ??? */
+      /* change this */
+      h3 {
+        grid-column: 1 / 5;
+      }
+      div {
+        grid-column: span 8;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          text-transform: uppercase;
+          grid-column: span 2;
+        }
+        span:first-of-type {
+          grid-column: 5;
+        }
+        a {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+    li + li {
+      border-top: 1px solid rgba(var(--black));
+    }
+  }
+  /* end of vacancy block */
+
   main {
     padding: 0 48px;
     border: 1px solid rgba(var(--black));
@@ -480,7 +559,7 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 }
 /* end of md and lg screens */
 /* hamburger menu removal */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1140) {
 }
 header img {
   max-height: 80px;
