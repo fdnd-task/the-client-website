@@ -352,41 +352,6 @@ header img {
   min-height: 40px;
   max-height: 60px;
 }
-nav {
-  display: flex;
-  color: rgba(var(--black));
-  background: rgba(var(--white));
-  width: 100%;
-  transition: 0.2s ease;
-  a {
-    color: inherit;
-  }
-}
-
-ul {
-  list-style-type: none;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  li {
-    height: fit-content;
-    a {
-      display: flex;
-      align-items: center;
-      gap: 0.375rem;
-      span {
-        padding: 0 0.25rem;
-        font-size: 0.75rem;
-        background-color: rgba(var(--blue));
-        height: fit-content;
-        line-height: 1rem;
-        color: rgba(var(--white));
-      }
-    }
-  }
-}
 
 /* container */
 .container {
@@ -399,16 +364,18 @@ nav ul {
 }
 
 nav {
-  div {
-    button {
-      height: 100%;
-      aspect-ratio: 1;
-    }
+  height: 64px;
+  padding: 12px 14px;
+  background: rgba(var(--white));
+  display: flex;
+  button {
+    height: 100%;
+    aspect-ratio: 1;
   }
 }
 
 /* md and lg screens */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 660px) {
   /* header | nav */
 
   header {
@@ -426,10 +393,10 @@ nav {
     div {
       width: 100%;
       display: flex;
+      left: 100%;
       button {
         border: 0;
         border-radius: 0;
-        display: none;
       }
     }
   }
@@ -449,20 +416,6 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     border-left: 1px solid rgba(var(--black));
     border-right: 1px solid rgba(var(--black));
     z-index: -1;
-  }
-
-  nav ul {
-    flex-direction: row;
-    width: 50%;
-    justify-content: end;
-    padding-top: 1rem;
-    gap: 3rem;
-    &:first-of-type {
-      justify-content: start;
-      margin: 0 48px;
-      gap: 2rem;
-      width: 100%;
-    }
   }
 
   nav ul li span {
@@ -538,10 +491,19 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 
   /* md+ nav | header */
   nav {
+    height: 178px;
+    justify-content: space-between;
     padding: 48px;
     border-bottom: 1px solid transparent;
+    transition: 0.2s ease;
+    div {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 16px);
+    }
   }
   nav.scrolled {
+    height: 114px;
     padding: 16px 48px;
     border-bottom: 1px solid rgba(var(--black));
   }
@@ -559,7 +521,49 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 }
 /* end of md and lg screens */
 /* hamburger menu removal */
-@media screen and (min-width: 1140) {
+@media screen and (min-width: 1080px) {
+  button.burger {
+    display: none;
+  }
+
+  nav {
+    color: rgba(var(--black));
+    width: 100%;
+    div {
+      position: initial;
+      ul {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: end;
+        padding-top: 1rem;
+        gap: clamp(1rem, 3vw, 3rem);
+        &:first-of-type {
+          justify-content: start;
+          margin: 0 48px;
+          gap: 2rem;
+          width: 100%;
+        }
+        li {
+          height: fit-content;
+          a {
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            span {
+              padding: 0 0.25rem;
+              font-size: 0.75rem;
+              background-color: rgba(var(--blue));
+              height: fit-content;
+              line-height: 1rem;
+              color: rgba(var(--white));
+            }
+          }
+        }
+      }
+    }
+  }
 }
 header img {
   max-height: 80px;
@@ -568,4 +572,8 @@ header img {
 ::selection {
   background-color: rgba(var(--important));
   color: rgba(var(--white));
+}
+
+ul {
+  list-style-type: none;
 }

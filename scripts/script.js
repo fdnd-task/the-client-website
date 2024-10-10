@@ -1,5 +1,5 @@
 const pageWithoutScroll = window.innerWidth - 15;
-pageWithoutScroll > 800 && window.addEventListener("scroll", checkScroll)
+pageWithoutScroll > 769 && window.addEventListener("scroll", checkScroll)
 
 const nav = document.querySelector("nav");
 let isScrolled = false;
@@ -16,3 +16,4 @@ function checkScroll() {
   }
 }
 
+// switch to intersectionObserver
