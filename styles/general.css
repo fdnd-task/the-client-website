@@ -244,7 +244,7 @@ div:nth-child(2) {
 /* content block */
 
 .content-block > * {
-  grid-column: 3 / 11;
+  grid-column: 1 / -1;
   text-align: center;
 }
 .content-block {
@@ -285,21 +285,30 @@ div:nth-child(2) {
 /* events block */
 .events-block {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
   border: 1px solid rgba(var(--black));
   border-width: 1px 0;
   margin-left: -48px;
   margin-right: -48px;
   > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    @media (min-width: 960px) {
+      flex-direction: column;
+    }
     padding: 3rem;
     border-right: 1px solid rgba(var(--black));
     > * {
       max-width: 384px;
     }
     img {
-      width: 416px;
+      width: 50%;
+      @media (min-width: 960px) {
+        width: 416px;
+      }
       margin-bottom: 24px;
     }
     article {
@@ -368,10 +377,21 @@ nav {
   padding: 12px 14px;
   background: rgba(var(--white));
   display: flex;
+  justify-content: space-between;
+  div {
+    left: 100%;
+    position: absolute;
+  }
   button {
     height: 100%;
     aspect-ratio: 1;
   }
+}
+
+section {
+  display: grid;
+  height: fit-content;
+  grid-template-columns: subgrid;
 }
 
 /* md and lg screens */
@@ -393,7 +413,7 @@ nav {
     div {
       width: 100%;
       display: flex;
-      left: 100%;
+      top: 0;
       button {
         border: 0;
         border-radius: 0;
@@ -422,6 +442,10 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     font-weight: 300;
   }
   /* end of nav | header */
+
+  .content-block {
+    grid-column: 3 / 11;
+  }
   .companies-block {
     margin-left: -48px;
     margin-right: -48px;
@@ -483,22 +507,13 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     gap: 0 32px;
   }
 
-  section {
-    display: grid;
-    height: fit-content;
-    grid-template-columns: subgrid;
-  }
-
   /* md+ nav | header */
   nav {
     height: 178px;
-    justify-content: space-between;
     padding: 48px;
     border-bottom: 1px solid transparent;
     transition: 0.2s ease;
     div {
-      position: absolute;
-      top: 0;
       left: calc(100% + 16px);
     }
   }
