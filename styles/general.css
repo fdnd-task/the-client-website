@@ -2,8 +2,8 @@
 /* ! replace this eventually */
 /* variables */
 :root {
-  --secondary-font: "Martian mono", sans-serif;
   --primary-font: "Archivo", verdana;
+  --secondary-font: "Martian mono", sans-serif;
   --white: 255, 255, 255;
   --black: 34, 34, 38;
   --grey: 102, 102, 102;
@@ -12,8 +12,8 @@
   --letter-spacing: -0.04em; /* -4% van de font size */
 
   /* width */
-  --minimum-size: 769px;
-  --burger-size: 1300px;
+  --minimum-size: 660px;
+  --burger-size: 1080px;
 
   /* spacing */
   --size-xs: 0.5rem;
@@ -302,6 +302,7 @@ div:nth-child(2) {
     }
     article {
       margin-bottom: 3.5rem;
+      /* alle child elementen met een neighbor in de div behalve de laatste */
       > * + *:not(:last-child) {
         margin: 1rem 0;
       }
