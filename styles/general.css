@@ -286,45 +286,28 @@ div:nth-child(2) {
 .events-block {
   display: flex;
   flex-direction: column;
-  @media (min-width: 960px) {
-    flex-direction: row;
-  }
   border: 1px solid rgba(var(--black));
   border-width: 1px 0;
   margin-left: -48px;
   margin-right: -48px;
   > div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 1px solid rgba(var(--black));
-    @media (min-width: 960px) {
-      flex-direction: column;
-      border-bottom: 0;
-      border-right: 1px solid rgba(var(--black));
-    }
-    padding: 3rem;
-    > * {
-      max-width: 384px;
-    }
+    padding: 3.375rem;
+    gap: 2rem;
     img {
-      width: 50%;
-      @media (min-width: 960px) {
-        width: 416px;
-      }
-      @media (min-width: 960px) {
-        margin-bottom: 1.5rem;
-      }
+      width: 100%;
+      object-fit: cover;
     }
     article {
-      margin: 0;
-      @media (min-width: 960px) {
-        margin-bottom: 3.5rem;
-      }
+      margin-bottom: 3.5rem;
       > * + *:not(:last-child) {
         margin: 1rem 0;
       }
     }
     a {
+      margin-bottom: 4.75rem;
       width: fit-content;
     }
   }
@@ -429,6 +412,7 @@ section {
     }
   }
 
+
   /* 
 stomme 'hack'
 maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
@@ -457,6 +441,16 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
   .companies-block {
     margin-left: -48px;
     margin-right: -48px;
+  }
+
+  .events-block{
+    > div{
+      flex-direction: row;
+      padding: 3rem;
+      img{
+        width: 50%;
+      }
+    }
   }
 
   /* vacancy block */
@@ -535,12 +529,6 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
   .container {
     margin: 0px 16px;
   }
-
-  .events-block {
-    > div a {
-      margin-bottom: 4.75rem;
-    }
-  }
 }
 /* end of md and lg screens */
 /* hamburger menu removal */
@@ -584,6 +572,20 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
             }
           }
         }
+      }
+    }
+  }
+
+  .events-block{
+    flex-direction: row;
+    > div {
+      gap: 0;
+      flex-direction: column;
+      border-bottom: 0;
+      border-right: 1px solid rgba(var(--black));
+      img{
+        width: 416px;
+        margin-bottom: 1.5rem;
       }
     }
   }
