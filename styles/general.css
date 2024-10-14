@@ -75,7 +75,7 @@ a {
   stroke: initial;
   span {
     border-right: 1px solid rgba(var(--black));
-    padding: 16px 14px;
+    padding: 14px 16px;
     height: 100%;
   }
   div {
@@ -476,18 +476,17 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
       h3 {
         grid-column: 1 / 5;
       }
-      div {
+      .data {
+        font-family: var(--secondary-font);
         grid-column: span 8;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        span {
+        gap: 2rem;
+        > * {
+          width: 20%;
           text-transform: uppercase;
-          grid-column: span 2;
-        }
-        span:first-of-type {
-          grid-column: 5;
         }
         a {
           display: flex;
@@ -585,7 +584,7 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
       border-bottom: 0;
       border-right: 1px solid rgba(var(--black));
       img{
-        width: 416px;
+        width: 100%;
         margin-bottom: 1.5rem;
       }
     }
