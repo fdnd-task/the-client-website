@@ -374,9 +374,11 @@ div:nth-child(2) {
         text-transform: uppercase;
       }
       .group {
+        gap: 0;
         display: flex;
+        width: 100%;
         > * {
-          width: 100%;
+          width: 20%;
         }
       }
       a {
@@ -537,6 +539,9 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
       .data {
         > .group {
           width: 60%;
+          > * {
+            width: 100%;
+          }
         }
       }
     }
@@ -635,6 +640,9 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+        .group {
+          width: 60%;
+        }
         span,
         a {
           width: 20%;
