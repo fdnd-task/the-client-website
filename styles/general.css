@@ -427,12 +427,27 @@ nav {
   justify-content: space-between;
   border-bottom: 1px solid rgba(var(--black));
   div {
-    left: 100%;
+    height: 100%;
+    right: -376px;
     position: fixed;
+    transition: 0.3s ease 0.1s;
+  }
+  div.open {
+    right: 0;
+  }
+  div.open::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
   }
   button {
     height: 100%;
     aspect-ratio: 1;
+    z-index: 100;
+    border: none;
   }
 }
 
@@ -459,6 +474,7 @@ section {
     height: fit-content;
     border: 1px solid rgba(var(--black));
     div {
+      max-width: 360px;
       width: 100%;
       display: flex;
       top: 0;
@@ -524,9 +540,6 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     padding: 48px;
     border-bottom: 1px solid transparent;
     transition: 0.2s ease;
-    div {
-      left: calc(100% + 16px);
-    }
   }
   nav.scrolled {
     height: 114px;
@@ -562,14 +575,17 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
     width: 100%;
     div {
       position: initial;
+      max-width: unset;
       ul {
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width: 100%;
         justify-content: end;
         padding-top: 1rem;
         gap: clamp(1rem, 3vw, 3rem);
         &:first-of-type {
+          text-wrap: nowrap;
+          width: 60%;
           justify-content: start;
           margin: 0 48px;
           gap: 2rem;

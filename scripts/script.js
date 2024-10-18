@@ -1,10 +1,9 @@
 const pageWithoutScroll = window.innerWidth - 15;
-pageWithoutScroll > 660 && window.addEventListener("scroll", checkScroll)
-
+const burgerMenu = document.querySelector('.burger-menu')
 const nav = document.querySelector("nav");
 let isScrolled = false;
 
-function checkScroll() {
+const checkScroll = () => {
   const scrolledDown = window.scrollY > 0;
   
   if (scrolledDown && !isScrolled) {
@@ -14,5 +13,12 @@ function checkScroll() {
     nav.classList.remove("scrolled");
     isScrolled = false;
   }
+}
+pageWithoutScroll > 660 && window.addEventListener("scroll", checkScroll)
+
+const OpenBurger = () => {
+console.log(burgerMenu);
+burgerMenu.classList.toggle('open')
+
 }
 // switch to intersectionObserver
