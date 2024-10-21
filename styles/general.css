@@ -444,20 +444,28 @@ nav {
     background: rgba(0, 0, 0, 0.3);
     left: 0;
   }
-  button {
+  a {
+    text-align: center;
     height: 100%;
     aspect-ratio: 1;
     z-index: 100;
-    border: none;
-    div, div::after, div::before{
-      position: static;
+    padding: .5rem;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(var(--black));
+
+    .lines {
+      background: rgba(var(--blue));
+      display: block;
+      background: rgba(var(--black));
       height: 3px;
       width: 100%;
-      background: rgba(var(--black));
-    }
-    div::after, div::before{
-      content: '';
-      display: block;
+      &:nth-child(2){
+        width: 80%;
+      }
     }
   }
 }
@@ -489,10 +497,6 @@ section {
       width: 100%;
       display: flex;
       top: 0;
-      button {
-        border: 0;
-        border-radius: 0;
-      }
     }
   }
 
@@ -577,7 +581,7 @@ maar dit zorgt er wel voor dat de scroll header op elke browser werkt :)
 /* end of md and lg screens */
 /* hamburger menu removal */
 @media screen and (min-width: 1080px) {
-  button.burger {
+  .burger {
     display: none;
   }
 
