@@ -5,9 +5,9 @@
 Je bent nu twee weken bezig met de website voor je eerste opdrachtgever bij
 FDND. Twee weken waarin je al veel code hebt geschreven; je hebt aan de hand
 van een aantal schetsen een _prototype_ gemaakt in gestructureerde _HTML_.
-Je hebt _Layout Modes_ en _typografie_ toegepast via _CSS_, en waarschijnlijk
+Je hebt _Layout Modes_ en wat _typografie_ toegepast via _CSS_, en waarschijnlijk
 je website _responsive_ gemaakt via het _Mobile first_ principe. Je hebt
-meerdere keren een code & design review gedaan en feedback gehad op je werk.
+meerdere keren een code & design review gedaan, en feedback gehad op je werk.
 
 Grote kans dat je nog niet niet heel veel tijd hebt genomen om eens rustig naar
 het totaalplaatje te kijken. Misschien ben je inmiddels het overzicht wel al
@@ -244,7 +244,7 @@ Pas vervolgens de volgorde van je CSS aan, en kijk waar je selectors kunt
 nesten.
 
 Herschrijf hierna je media queries, door deze te nesten bij de selectors waar
-ze voor gelden.
+ze voor gelden (waarschijnlijk heb je dit voor vrijdag ook al gedaan).
 
 Als je dit gedaan hebt, is er als het goed is niks veranderd aan de werking
 van je site, is je code iets overzichtelijker geworden, en heb je je eerste
@@ -252,3 +252,23 @@ _code refactor_ gedaan. Probeer volgende keer deze eerste paar conventies
 vanaf het begin toe te passen op je code.
 
 Sluit het issue door je code te pushen.
+
+### Bronnen
+
+- [Refactoren @ Wikipedia](https://nl.wikipedia.org/wiki/Refactoren)
+- [HTML Style Guide @ W3Schools](https://www.w3schools.com/html/html5_syntax.asp)
+
+## Hoe nu verder, voor woensdag?
+
+Vrijdag heb je waarschijnlijk wat issues ingeschoten gekregen tijdens de code & design review. Pak deze stap voor stap op. Koppel je commits aan je issues, en sluit issues als je ze afgerond hebt. Hou tussendoor de [Definition of done](INSTRUCTIONS.md#definition-of-done) in de gaten.
+
+💪 Wist je dat je issues ook kunt [sluiten via je commit message](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)?
+
+En vergeet niet dat je via issues ook om feedback kunt vragen aan een docent, door diegene te _taggen_:
+
+| Squad 1i |       | Squad 1J      |       |
+| -------- | -------- | -------- | -------- |
+| Koop | @KoopReynders | Krijn | @KrijnHoetmer | 
+| Joost | @joostf | Cyd | @cydstumpel |
+| Gwen  | @gwen-bo | Sanne  | @shooft |
+| Jad  | @jadjoubran | Suus | @suustenvoorde |
