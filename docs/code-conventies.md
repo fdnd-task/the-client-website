@@ -272,3 +272,5 @@ En vergeet niet dat je via issues ook om feedback kunt vragen aan een docent, do
 | Joost | @joostf | Cyd | @cydstumpel |
 | Gwen  | @gwen-bo | Sanne  | @shooft |
 | Jad  | @jadjoubran | Suus | @suustenvoorde |
+
+<img width="838" height="317" alt="image" src="https://github.com/user-attachments/assets/c42d276b-8361-4c0c-87a1-237682d8bbe4" />
