@@ -264,7 +264,7 @@ Vrijdag heb je waarschijnlijk wat issues ingeschoten gekregen tijdens de code & 
 
 💪 Wist je dat je issues ook kunt [sluiten via je commit message](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)?
 
-En vergeet niet dat je via issues ook om feedback kunt vragen aan een docent, door diegene te _taggen_:
+En vergeet niet dat je via issues ook om feedback op je werk kunt vragen aan een docent, door diegene te _taggen_:
 
 | Squad 1i |       | Squad 1J      |       |
 | -------- | -------- | -------- | -------- |
