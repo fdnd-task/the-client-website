@@ -34,7 +34,7 @@ Bij 'Kenmerken' staat welke technieken zijn gebruikt en hoe. Wat is de HTML stru
 - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Working with advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting)
 
-## Sprint Review
+## Voorbereiding Sprint Review
 
 De Sprint Review is bedoeld als het officiële moment tijdens elke sprint waarin je het gemaakte werk bespreekt met de opdrachtgever. De opdrachtgever geeft feedback naar aanleiding van het (deel)product dat gedemonstreerd is. Het maakt niet uit dat de opdracht nog niet af is, je kan altijd laten zien waar je aan hebt gewerkt en bespreken of jouw oplossing overeenkomt met de wensen van de opdrachtgever.
 
