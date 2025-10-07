@@ -27,9 +27,8 @@ Waarom doe je dit?
 -->
 
 Voor een goede Sprint Review heb je een goede voorbereiding nodig. 
-Het team zorgt voor een agenda, zodat de Review soepeltjes verloopt. 
+Een tweedejaars zorgt voor een agenda, zodat de Review soepeltjes verloopt. 
 In de Review gaat het erom dat je feedback krijgt op het gemaakte werk en dat je de feedback gebruikt voor de volgende sprint(s).
-
 
 ### Definieer het doel
 Het is belangrijk om met een duidelijk doel naar de Sprint Review te gaan. 
@@ -37,7 +36,7 @@ Het doel kan bijvoorbeeld zijn om feedback te verzamelen over het geleverde werk
 Het definiëren van het doel helpt bij het sturen van de discussie en maakt dus uiteindelijk een effectieve Sprint Review.
 
 #### Voorbereiding
-Bespreek met studenten uit je squad die dezelfde opdracht hebben jouw doel van de Sprint Review. 
+Bespreek met studenten die dezelfde opdracht hebben jouw doel van de Sprint Review. 
 Schrijf het op en begin jouw demonstratie donderdag met het uitleggen van jouw doel aan de opdrachtgever.
 
 
@@ -56,7 +55,7 @@ Geef de demonstratie aan je medestudenten en een mentor en geef elkaar tips en t
 Een Sprint Review is bedoeld om feedback te krijgen op het geleverde werk. Zorg dat je feedback krijgt en dat de opdrachtgever wordt aangemoedigd om specifiek en constructief te zijn in hun feedback. Je kan ook vragen stellen om de behoeften en verwachtingen van de opdrachtgever (nog) beter te begrijpen.
 
 #### Voorbereiding
-Bespreek met je medestudenten welke vragen jullie aan de opdrachtgever willen stellen en schrijf de vragen op voor donderdag. Vergeet niet tijdens de Sprint Review de antwoorden op te schrijven als je je website laat zien.
+Bespreek met andere studenten welke vragen jullie aan de opdrachtgever willen stellen en schrijf de vragen op voor donderdag. Vergeet niet tijdens de Sprint Review de antwoorden op te schrijven als je je website laat zien.
 
 
 ### Beoordeel de feedback
