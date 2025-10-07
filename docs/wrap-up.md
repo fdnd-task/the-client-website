@@ -36,7 +36,7 @@ Het is belangrijk om met een duidelijk doel naar de Sprint Review te gaan.
 Het doel kan bijvoorbeeld zijn om feedback te verzamelen over het geleverde werk, inzicht te bieden in de voortgang van het project of om aanpassingen te bespreken. 
 Het definiëren van het doel helpt bij het sturen van de discussie en maakt dus uiteindelijk een effectieve Sprint Review.
 
-##### Voorbereiding
+#### Voorbereiding
 Bespreek met studenten uit je squad die dezelfde opdracht hebben jouw doel van de Sprint Review. 
 Schrijf het op en begin jouw demonstratie donderdag met het uitleggen van jouw doel aan de opdrachtgever.
 
@@ -47,7 +47,7 @@ Leg de functionaliteiten en kenmerken duidelijk uit en laat het zien. Gebruik al
 Wil je laten zien dat het responsive werkt? Laat je website dan op verschillende apparaten zien.
 Met de demonstratie test je of het werk voldoet aan de vraag van de opdrachtgever.
 
-##### Voorbereiding
+#### Voorbereiding
 Schrijf een plan van aanpak voor jouw demonstratie, wat wil je laten zien, in welke volgorde en wat heb je daarvoor nodig?
 Geef de demonstratie aan je medestudenten en een mentor en geef elkaar tips en tops voor donderdag.
 
@@ -55,7 +55,7 @@ Geef de demonstratie aan je medestudenten en een mentor en geef elkaar tips en t
 ### Faciliteer feedback
 Een Sprint Review is bedoeld om feedback te krijgen op het geleverde werk. Zorg dat je feedback krijgt en dat de opdrachtgever wordt aangemoedigd om specifiek en constructief te zijn in hun feedback. Je kan ook vragen stellen om de behoeften en verwachtingen van de opdrachtgever (nog) beter te begrijpen.
 
-##### Voorbereiding
+#### Voorbereiding
 Bespreek met je medestudenten welke vragen jullie aan de opdrachtgever willen stellen en schrijf de vragen op voor donderdag. Vergeet niet tijdens de Sprint Review de antwoorden op te schrijven als je je website laat zien.
 
 
