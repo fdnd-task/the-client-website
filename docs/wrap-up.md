@@ -4,8 +4,6 @@
 
 Tijdens de Wrap up ga je bekijken wat je nog kan afmaken voor de Sprint Review, wat wil je donderdag laten zien en wat is daar nog voor nodig? Ook zorg je ervoor dat je project een nette professionele Readme krijgt. 
 
-Bij de workshop [Sprint Review](sprint-review.md) leer je hoe dat in zijn werk gaat en wat je moet voorbereiden. 
-
 Als je een sprint afsluit zorg er dan voor dat je *repository* een nette readme heeft. Dit kan je gebruiken voor de Sprint Review en daarna geef je de opdrachtgever de link naar je repo zodat die na de Sprint Review kan lezen en zien wat je hebt gemaakt.
 
 ### Readme
