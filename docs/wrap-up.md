@@ -42,8 +42,8 @@ Schrijf het op en begin jouw demonstratie donderdag met het uitleggen van jouw d
 
 ### Demonstratie van het werk
 Tijdens de Sprint Review geef je een demonstratie van de website. 
-Leg de functionaliteiten en kenmerken duidelijk uit en laat het zien. Gebruik als beginpunt van je demonstratie je readme.  
-Wil je laten zien dat het responsive werkt? Laat je website dan op verschillende apparaten zien.
+Leg de functionaliteiten en kenmerken duidelijk uit en laat het zien. Gebruik als beginpunt van je demonstratie je Readme.  
+Wil je laten zien dat het responsive werkt? Laat je website dan op verschillende apparaten of formaten zien.
 Met de demonstratie test je of het werk voldoet aan de vraag van de opdrachtgever.
 
 #### Voorbereiding
@@ -60,7 +60,7 @@ Bespreek met andere studenten welke vragen jullie aan de opdrachtgever willen st
 
 ### Beoordeel de feedback
 Na de Sprint Review ga je de feedback beoordelen en documenteren. 
-Analyseer de feedback die je hebt gekregen van de opdrachtgever en bedenk hoe je het kan in de volgende sprint kan verwerken. Neem de feedback op in je issues (en project board) met een duidelijke beschrijving.
+Analyseer de feedback die je hebt gekregen van de opdrachtgever en bedenk hoe je het in de volgende sprint kunt verwerken. Neem de feedback op in je issues (en project board) met een duidelijke beschrijving.
 
 
 ### Bronnen
@@ -70,22 +70,22 @@ Analyseer de feedback die je hebt gekregen van de opdrachtgever en bedenk hoe je
 
 
 ## Readme
-Als mensen – opdrachtgevers, docenten, studenten of toekomstige werkgevers – jouw werk bekijken wordt eerst de readme gelezen om te begrijpen wat je gedaan hebt. Het is belangrijk om dit bestand heel duidelijk te schrijven.
+Als mensen–opdrachtgevers, docenten, studenten of toekomstige werkgevers–jouw werk bekijken, wordt eerst de Readme gelezen om te begrijpen wat je gedaan hebt. Het is belangrijk om dit bestand heel duidelijk te schrijven.
 
-De readme is het eerste wat iemand ziet op GitHub. 
-In de Readme kan je uitleggen wat de opdracht is, wat je hebt gemaakt, je kan screenshots laten toevoegen en vertellen wie de website heeft genaakt. De readme is het uithangbord van het project.
+De Readme is het eerste wat iemand ziet op GitHub. 
+In de Readme kun je uitleggen wat de opdracht is, wat je hebt gemaakt, je kan screenshots laten toevoegen en vertellen wie de website heeft gemaakt. De Readme is het uithangbord van het project.
 
 ### Aanpak
 
 #### Intro
-Begin de Readme met een korte uitleg over de opdracht, schrijf hier bijvoorbeeld de vraag van de opdrachtgever. Maak via Github Pages een url van je project en voeg deze ook toe aan de Readme.
+Begin de Readme met een korte uitleg over de opdracht, schrijf hier bijvoorbeeld de vraag van de opdrachtgever. Maak via GitHub Pages een live URL van je project en voeg deze ook toe aan de Readme.
 
 #### Beschrijving
 Bij 'Beschrijving' komt te staan hoe je project er uit ziet, hoe het werkt en wat je er mee kan. Beschrijf een paar opvallende features en voeg ook screenshots toe; laat bijvoorbeeld zien hoe de website er op verschillende devices uitziet. 
-Dit is je etalage van je project en kan je gebruiken tijdens de Sprint Review
+Dit is de etalage van je project en kan je gebruiken tijdens de Sprint Review.
 
 #### Kenmerken 
-Bij 'Kenmerken' staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framework of library gebruikt? Dit kun je allemaal hier opschrijven.
+Bij 'Kenmerken' staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JavaScript gedaan en hoe? Wat zijn je conventies? Misschien heb je een framework of library gebruikt? Dit kun je allemaal hier opschrijven.
 
 ### Bronnen
 
