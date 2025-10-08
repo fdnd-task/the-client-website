@@ -2,16 +2,16 @@
 
 Tijdens de Wrap up ga je bekijken wat je nog kan afmaken voor de Sprint Review, wat wil je donderdag laten zien en wat is daar nog voor nodig? Ook zorg je ervoor dat je project een nette professionele Readme krijgt. 
 
-Als je een sprint afsluit zorg er dan voor dat je *repository* een nette readme heeft. Dit kan je gebruiken voor de Sprint Review en daarna geef je de opdrachtgever de link naar je repo zodat die na de Sprint Review kan lezen en zien wat je hebt gemaakt.
+Als je een sprint afsluit, zorg er dan voor dat je *repository* een nette Readme heeft. Dit kan je gebruiken voor de Sprint Review en daarna geef je de opdrachtgever de link naar je repo, zodat die na de Sprint Review kan lezen en zien wat je hebt gemaakt.
 
 ## Sprint Review
 
-De Sprint Review is bedoeld als het officiële moment tijdens elke sprint waarin je het gemaakte werk bespreekt met de opdrachtgever. De opdrachtgever geeft feedback naar aanleiding van het (deel)product dat gedemonstreerd is. Het maakt niet uit dat de opdracht nog niet af is, je kan altijd laten zien waar je aan hebt gewerkt en bespreken of jouw oplossing overeenkomt met de wensen van de opdrachtgever.
+De Sprint Review is bedoeld als het officiële moment tijdens elke sprint, waarin je het gemaakte werk bespreekt met de opdrachtgever. De opdrachtgever geeft feedback naar aanleiding van het (deel)product dat gedemonstreerd is. Het maakt niet uit dat de opdracht nog niet af is, je kan altijd laten zien waar je aan hebt gewerkt en bespreken of jouw oplossing overeenkomt met de wensen van de opdrachtgever.
 
 ![Proces van briefing en debriefing](briefing-debriefing.png)  
 _Laat bij de Sprint Review zien wat je hebt gemaakt, zo check je of het voldoet aan de briefing van de opdrachtgever_
 
-De demonstratie aan de opdrachtgever moet letterlijk genomen worden. Het is dus geen PowerPoint-presentatie met daarin een weergave van de doelen en resultaten, maar het daadwerkelijk laten zien van het opgeleverde werk. Als het doel was om een website te ontwerpen en maken, demonstreer je de website zodat de opdrachtgever het kan bekijken en uitproberen. 
+De demonstratie aan de opdrachtgever moet letterlijk genomen worden. Het is dus geen PowerPoint-presentatie met daarin een weergave van de doelen en resultaten, maar het daadwerkelijk laten zien van het opgeleverde werk. Als het doel was om een website te ontwerpen en maken, demonstreer je de website, zodat de opdrachtgever het kan bekijken en uitproberen. 
 
 ### Aanpak Sprint Review en voorbereiding
 
